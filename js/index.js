@@ -83,6 +83,7 @@ $(function () {
 
     $('#tab .tab_content .list-group .oul:eq(1) li').click(function(){
         var def = $(this).attr('data-def');
+        $(this).addClass('current').siblings().removeClass('current');
         dataEmpty($('#c_content'));
         $.each(dataArr,function(index,obj){
             if(obj.grade === def){
