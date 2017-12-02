@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--设置字符集/编码格式-->
+    <meta charset="UTF-8">
+    <!--使用ie最新内核-->
+    <meta http-equiv='x-ua-compatible' content='IE=edge'>
+    <!--视口-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0">
+    <!--设置标题-->
+    <title>课程和班级</title>
+    <!--导入网页图标-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon_1427251704.ico">
+    <!--导入清空样式css文件-->
+    <link rel="stylesheet" href="lib/cssreset/cssreset-min.css">
+    <!--导入bootstrap文件-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--导入自己的css文件-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--导入兼容ie9以下的html的js文件-->
+    <script src='lib/html5shiv/html5shiv.min.js'></script>
+    <!--导入兼容ie9以下的css的文件-->
+    <script src='lib/respond/respond.min.js'></script>
+</head>
+<body>
+<!--头部导航-->
+<header>
+    <div class="logo"><img src="images/bar-logo.png" alt=""></div>
+    <div class="nav">
+        <ul>
+            <li>首页</li>
+            <li>课程和班级
+                <ul class="class-name">
+                    <li>公开课</li>
+                    <li>课程功能</li>
+                    <li>系统管理</li>
+                    <li>官方应用</li>
+                    <li>班级中心</li>
+                </ul>
+            </li>
+            <li>直播课堂</li>
+            <li>APP</li>
+            <li>会员</li>
+            <li>更多</li>
+        </ul>
+    </div>
+    <div class="user">
+        <ul>
+            <li><input type="text" placeholder="搜索" class="search"></li>
+            <li>登录</li>
+            <li>注册</li>
+        </ul>
+    </div>
+</header>
+
+
+<!--头部课程列表及分类-->
+<section id='banner'>
+    <div class="banner_content">
+        <h3>课程列表</h3>
+        <div class="more">
+            <a href="#" class='btn'>查看班级</a>
+            <a href="#" class='btn'>查看公开课</a>
+        </div>
+    </div>
+</section>
+
+<!--头部分类-->
+<section id='tab'>
+    <div class="tab_content">
+        <ul class="list-group">
+            <li class="list-group-item"><span>所有分类:</span></li>
+            <li class="list-group-item">
+                <span>分类:</span>
+                <ul class='oul'>
+                    <li class='current' data-def='all'><a href="#">
+                        全部</a></li>
+                    <li data-def='beta'><a href="#">功能体验</a></li>
+                    <li data-def='tool'><a href="#">课程功能</a></li>
+                    <li data-def='app'><a href="#">官方应用</a></li>
+                    <li data-def='sys'><a href="#">系统管理</a></li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <span>年级:</span>
+                <ul class='oul'>
+                    <li data-def='senior_one'><a href="#">高一</a></li>
+                    <li data-def='senior_two'><a href="#">高二</a></li>
+                    <li data-def='senior_three'><a href="#">高三</a></li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <span>科目:</span>
+                <ul class='oul'>
+                    <li data-def='chinese'><a href="#">语文</a></li>
+                    <li data-def='math'><a href="#">数学</a></li>
+                    <li data-def='english'><a href="#">英语</a></li>
+                    <li data-def='physics'><a href="#">物理</a></li>
+                    <li data-def='chemistry'><a href="#">化学</a></li>
+                    <li data-def='biology'><a href="#">生物</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--中间主体部分-->
+<section id="content">
+    <!--主体头部-->
+    <div class="c_header">
+        <ul class="left">
+            <li><a href="#">最新</a></li>
+            <li><a href="#">最热</a></li>
+            <li class='current'><a href="#">推荐</a></li>
+        </ul>
+        <div class="right">
+            <div class='c_btn'>
+                <button><i class='glyphicon glyphicon-magnet'></i> 会员课程</button>
+            </div>
+            <label class='ipt'>
+                <input type="checkbox">
+                &nbsp;&nbsp;直播课程
+            </label>
+            <label class='ipt'>
+                <input type="checkbox">
+                &nbsp;&nbsp;免费课程
+            </label>
+        </div>
+    </div>
+    <!--主体内容-->
+    <div class="c_content" id='c_content'>
+        <!--<div class="data">
+            <div class="header">
+                <img src="" alt="">
+            </div>
+            <a href="#"></a>
+            <div class="bottom">
+                <div class="left">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="right">
+                    <span></span>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <!--主体尾部-->
+    <div class="c_footer"></div>
+</section>
+
+<!--尾部列表-->
+<section id='last'>
+    <div class="last_content container">
+        <div class="left row col-md-8">
+            <div class="link-item ">
+                <h3>我是学生</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/347/learn#lesson/673" target="_blank">如何注册</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/347/learn#lesson/705" target="_blank">如何学习</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/347/learn#lesson/811" target="_blank">如何互动</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="link-item ">
+                <h3>我是老师</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/22" target="_blank">发布课程</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/147" target="_blank">使用题库</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/372" target="_blank">教学资料库</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="link-item ">
+                <h3>我是管理员</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/340" target="_blank">系统设置</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/341" target="_blank">课程设置</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/343" target="_blank">用户管理</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="link-item hidden-xs ">
+                <h3>商业应用</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/232/learn#lesson/358" target="_blank">会员专区</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/232/learn#lesson/467" target="_blank">题库增强版</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qiqiuyu.com/course/380" target="_blank">用户导入导出</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="link-item hidden-xs ">
+                <h3>关于我们</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.edusoho.com/" target="_blank">ES官网</a>
+                    </li>
+                    <li>
+                        <a href="http://weibo.com/qiqiuyu/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank">官方微博</a>
+                    </li>
+                    <li>
+                        <a href="http://www.edusoho.com/abouts/joinus" target="_blank">加入我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right row col-md-4">
+            <div class="top">
+                <a href="#"><img src="images/bottom_logo.png" alt=""></a>
+            </div>
+            <div class="bottom">
+                <a href="#">
+                    <i class='glyphicon glyphicon-globe'></i>
+                </a>
+                <span data-toggle="tooltip" data-placement="bottom" title="微信二维码">
+                    <i class='glyphicon glyphicon-earphone'></i>
+                    <div><img src="images/weixin.png" alt=""></div>
+                </span>
+                <span data-toggle="tooltip" data-placement="bottom" title="ios下载">
+                    <i class='glyphicon glyphicon-apple'></i>
+                    <div><img src="images/apple.png" alt=""></div>
+                </span>
+                <span data-toggle="tooltip" data-placement="bottom" title="Android下载">
+                    <i class='glyphicon glyphicon-text-background'></i>
+                    <div><img src="images/android.png" alt=""></div>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--尾部-->
+<footer id='footer'>
+    <div class="text">
+        <p>Powered by <a href="#">EduSoho v8.2.5</a> ©2014-2017 <a href="#">好知网</a> <a href="#">课程存档</a></p>
+        <p>课程内容版权均归 <a href="#">杭州阔知网络科技有限公司</a> 所有 <a href="#">浙ICP备13006852号-1</a></p>
+    </div>
+</footer>
+
+
+
+
+
+<!--导入jQuery-->
+<script src='lib/jquery/jquery.min.js'></script>
+<!--导入bootstrap.js文件-->
+<script src='lib/bootstrap/js/bootstrap.min.js'></script>
+<!--导入自己的js文件-->
+<script src='js/index.js'></script>
+</body>
+</html>

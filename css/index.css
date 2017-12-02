@@ -1,0 +1,481 @@
+
+
+/*导入文字图标文件*/
+@font-face {
+    font-family: zjh;
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+/*设置字体图标公共样式*/
+[class^='icon-'],[class*=' icon-']{
+    font-family:zjh;
+    font-style: normal;
+}
+/*设置body的背景*/
+body{
+    background-color: #f5f5f5;
+}
+/*按钮公共样式*/
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition:color 1s;
+}
+a:hover{
+    color:#43bc60;
+}
+/*section公共样式*/
+section{
+    width:100%;
+}
+header {
+    width: 100%;
+    height: 64px;
+    background: #212121;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header .nav li {
+    float: left;
+    padding: 20px;
+    font-size: 16px;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+header .user ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+header {
+    position: relative;
+    color: #cccccc;
+    min-width: 1086px;
+}
+
+header .user ul li {
+    margin-right: 20px;
+}
+
+header .user input {
+    outline: none;
+    border: transparent;
+    border-radius: 50px;
+    height: 30px;
+    width: 70px;
+    text-indent: 10px;
+}
+
+header .nav .class-name {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background: white;
+    box-shadow: 0 0 30px -11px #616161;
+    top: 66px;
+    left: 360px;
+    display: none;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+header .nav .class-name li {
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    color: #616161;
+    line-height: 40px;
+    text-indent: 9px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header .nav .class-name li:hover {
+    background: #43bc60;
+}
+
+
+/*********************/
+/*头部课程列表*/
+section#banner{
+    display:flex;
+    align-items:center;
+    height:80px;
+    position: relative;
+}
+section#banner .banner_content {
+    display:flex;
+    width:1140px;
+    justify-content:space-between;
+    align-items:center;
+    position: absolute;
+    left:50%;
+    margin-left:-570px;
+}
+section#banner h3{
+    font-size:18px;
+}
+section#banner .banner_content .more>a{
+    background-color: #43bc60;
+    font-size: 14px;
+    padding: 12px 35px;
+    border-color: #36964d;
+    margin-right:4px;
+}
+section#banner .banner_content .more>a:hover{
+    color: #fff;
+    background-color: #389e51;
+    transition:background-color 1s;
+}
+
+
+/*头部分类样式*/
+section#tab{
+    height:195px;
+    display:flex;
+    margin-top:30px;
+    justify-content:center;
+    align-items:center;
+}
+section#tab .tab_content{
+    width:1140px;
+    height:100%;
+}
+section#tab .tab_content .list-group{
+    height:100%;
+}
+section#tab .tab_content .list-group li,
+section#tab .tab_content .list-group li ul{
+    display:flex;
+}
+section#tab .tab_content .list-group li span{
+    width:100px;
+}
+section#tab .tab_content .list-group li ul li{
+    text-align: center;
+    width:100px;
+}
+section#tab a{
+    color: #919191;
+    text-decoration: none;
+    transition:color 0.5s;
+}
+section#tab .tab_content a:hover{
+    color:#43bc60;
+}
+section#tab .tab_content .list-group>li>.oul>li.current>a{
+    color: #43bc60;
+}
+
+
+
+
+/*********************/
+/*设置主体头部样式*/
+section#content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+section#content .c_header,section#content .c_content,section .c_footer{
+    width:1140px;
+}
+section#content .c_header{
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    background-color: #fafafa;
+    justify-content:space-between;
+    /*align-items:center;*/
+}
+section#content .c_header .left{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:200px;
+    height:100%;
+}
+section#content .c_header .left li{
+    flex:1;
+    height:100%;
+    line-height:50px;
+    text-align: center;
+}
+section#content .c_header .left li a{
+    width: 100%;
+    height:100%;
+    display:inline-block;
+    text-decoration: none;
+    color: #616161;
+}
+/*主体头部右边样式*/
+section#content .c_header .right{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:300px;
+    height:100%;
+}
+section#content .c_header .right .c_btn{
+    flex:1;
+    height:100%;
+}
+section#content .c_header .right .c_btn button{
+    height:100%;
+    border:none;
+    background-color: #fafafa;
+}
+section#content .c_header .right .ipt{
+    flex:1;
+    height:100%;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    background-color: #fafafa;
+}
+section#content .c_header .right{
+    color: #616161;
+}
+section#content .c_header .left .current{
+    background-color: #43bc60;
+}
+section#content .c_header .left li.current>a{
+    color: #fff;
+}
+
+
+/******************/
+/*设置主体中间内容样式*/
+section#content .c_content{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:20px;
+}
+section#content .c_content .data{
+    border:1px solid #e4ecf3;
+    width:24%;
+    margin-right:15px;
+    margin-bottom:15px;
+    padding:10px;
+    transition:all 0.3s ease;
+}
+section#content .c_content .data:nth-of-type(4n+0){
+    margin-right:0;
+}
+section#content .c_content .data:hover{
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+section#content .c_content .data img{
+    width:250px;
+    cursor:pointer;
+}
+section#content .c_content .data a{
+    color: #616161;
+    transition:color 0.5s;
+    text-decoration: none;
+    cursor:pointer;
+    display:inline-block;
+    margin:10px 0;
+}
+section#content .c_content .data a:hover{
+    color:#43bc60;
+}
+section#content .c_content .data .bottom{
+    display:flex;
+    justify-content:space-between;
+}
+section#content .c_content .data .bottom .left{
+    width:100px;
+    display:flex;
+    justify-content:space-around;
+}
+
+
+
+/*********************/
+/*设置尾部列表*/
+section#last{
+    height:258px;
+    background-color: #2e2e2e;
+    display:flex;
+    justify-content:center;
+}
+section#last h3{
+    font-size: 16px;
+    color: #eee;
+}
+section#last a{
+    color: #c1c1c1;
+    text-decoration: none;
+}
+section#last .last_content .left a:hover{
+    color: #fff;
+    transition:all 0.3s ease;
+}
+
+section#last .last_content{
+    width:1140px;
+    box-sizing:border-box;
+    padding:55px 0;
+}
+section#last .last_content,section#last .last_content .left{
+    display:flex;
+    margin-top:-10px;
+}
+section#last .last_content .left{
+    justify-content:space-around;
+}
+section#last .last_content .left h3{
+    margin-bottom:30px;
+}
+section#last .last_content .left li{
+    margin-top:20px;
+}
+
+/*尾部列表右边样式*/
+section#last .last_content .right{
+    padding-top:30px;
+    margin-left:50px;
+}
+section#last .last_content .right .top{
+    padding-bottom:20px;
+}
+section#last .last_content .right .bottom{
+    width:233px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+section#last .last_content .right .bottom>a,section#last .last_content .right .bottom>span{
+    width:40px;
+    height:40px;
+    text-align: center;
+    background-color: red;
+    border-radius:50%;
+}
+section#last .last_content .right .bottom span{
+    position: relative;
+}
+section#last .last_content .right .bottom a:hover,section#last .last_content .right .bottom span:hover{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+section#last .last_content .right .bottom>a{
+    background-color: #e6162d;
+}
+section#last .last_content .right .bottom>a:hover{
+    background-color: #c4000b;
+}
+section#last .last_content .right .bottom>span:nth-of-type(1){
+    background-color: #1ec354;
+}
+section#last .last_content .right .bottom>span:nth-of-type(1):hover{
+    background-color: #00a132;
+}
+section#last .last_content .right .bottom>span:nth-of-type(2){
+    background-color: #3793f1;
+}
+section#last .last_content .right .bottom>span:nth-of-type(2):hover{
+    background-color: #1571cf;
+}
+section#last .last_content .right .bottom>span:nth-of-type(3){
+    background-color: #78c257;
+}
+section#last .last_content .right .bottom>span:nth-of-type(3):hover{
+    background-color: #56a035;
+}
+section#last .last_content .right .bottom i{
+    line-height:40px;
+    color: #fff;
+}
+
+/*二维码定位*/
+section#last .last_content .right .bottom span div{
+    position: absolute;
+    left:-70px;
+    top:-180px;
+    display:none;
+}
+
+
+
+
+
+/***********************/
+/*设置尾部样式*/
+#footer{
+    width:100%;
+    height:107px;
+    background-color: #212121;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#footer .text{
+    width:1140px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:25px;
+}
+#footer .text p{
+    width:100%;
+    flex:1;
+    text-align: center;
+}
+#footer a,#footer p{
+    color: #c1c1c1;
+    text-decoration: none;
+}
+#footer a:hover{
+    color: #fff;
+    transition:color 0.3s ease;
+}
+
+
