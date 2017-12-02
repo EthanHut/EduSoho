@@ -14,6 +14,7 @@
       "leave":"4"
     },
     {
+      "grade":"senior_two",
       "title":"nodejs",
       "src":"images/pic3.jpg",
       "status":"999元",
@@ -28,6 +29,7 @@
       "leave":"4"
     },
     {
+      "grade":"senior_one",
       "title":"账户充值",
       "src":"images/pic1.jpg",
       "status":"免费",
@@ -42,6 +44,7 @@
       "leave":"4"
     },
     {
+      "grade":"senior_three",
       "title":"账户充值",
       "src":"images/pic3.jpg",
       "status":"免费",

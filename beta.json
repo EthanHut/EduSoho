@@ -7,6 +7,7 @@
       "leave":"4"
     },
     {
+      "grade":"senior_two",
       "title":"带你遨游js的世界",
       "src":"images/pic2.jpg",
       "status":"999元",
@@ -14,6 +15,7 @@
       "leave":"4"
     },
     {
+      "grade":"senior_two",
       "title":"nodejs",
       "src":"images/pic3.jpg",
       "status":"999元",

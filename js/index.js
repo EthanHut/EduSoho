@@ -36,6 +36,8 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
     ajax('POST','all.json','json');
+    var dataArr;
+
     //页面加载完毕请求数据
     function ajax(type,url,datatype){
         $.ajax({
@@ -43,6 +45,7 @@ $(function () {
             url:url,
             datatype:datatype,
             success:function(result){
+                dataArr = result;
                 addBox(result);
             }
         });
@@ -80,7 +83,28 @@ $(function () {
 
     $('#tab .tab_content .list-group .oul:eq(1) li').click(function(){
         var def = $(this).attr('data-def');
-        console.log(def)
+        dataEmpty($('#c_content'));
+        $.each(dataArr,function(index,obj){
+            if(obj.grade === def){
+                $('#c_content').append(
+                    "<div class='data'>"+
+                    "<div class'header'>"+"<a href='#'>"+
+                    "<img src='"+obj.src+"'>"+"</a>"+
+                    "</div>"+
+                    "<a href='#'>"+obj.title+"</a>"+
+                    "<div class='bottom'>"+
+                    "<div class='left'>"+
+                    "<span>"+obj.person+"</span>"+
+                    "<span>"+obj.leave+"</span>"+
+                    "</div>"+
+                    "<div class='right'>"+
+                    "<span>"+obj.status+"</span>"+
+                    "</div>"+
+                    "</div>"+
+                    "</div>"
+                )
+            }
+        })
     })
     //清空数据函数
     function dataEmpty(obj){
