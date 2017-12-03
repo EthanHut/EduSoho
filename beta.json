@@ -1,5 +1,6 @@
 [
     {
+      "url":"http://demo.edusoho.com/course/891",
       "grade":"senior_one",
       "title":"账户充值",
       "src":"images/pic1.jpg",
@@ -8,6 +9,7 @@
       "leave":"4"
     },
     {
+      "url":"http://demo.edusoho.com/course/891",
       "grade":"senior_three",
       "title":"带你遨游js的世界",
       "src":"images/pic2.jpg",
@@ -16,6 +18,7 @@
       "leave":"4"
     },
     {
+      "url":"http://demo.edusoho.com/course/891",
       "grade":"senior_three",
       "title":"nodejs",
       "src":"images/pic3.jpg",

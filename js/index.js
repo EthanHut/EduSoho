@@ -18,10 +18,10 @@ $(function () {
             $.each(result,function(index,value){
                 $('#c_content').append(
                     "<div class='data'>"+
-                    "<div class'header'>"+"<a href='#'>"+
+                    "<div class'header'>"+"<a href="+value.url+">"+
                     "<img src='"+value.src+"'>"+"</a>"+
                     "</div>"+
-                    "<a href='#'>"+value.title+"</a>"+
+                    "<a href="+value.url+">"+value.title+"</a>"+
                     "<div class='bottom'>"+
                     "<div class='left'>"+
                     "<span>"+"<i class='fa fa-users'>"+"</i>"+value.person+"</span>"+
@@ -100,10 +100,10 @@ $(function () {
             if(obj.grade === def){
                 $('#c_content').append(
                     "<div class='data'>"+
-                    "<div class'header'>"+"<a href='#'>"+
+                    "<div class'header'>"+"<a href="+obj.url+">"+
                     "<img src='"+obj.src+"'>"+"</a>"+
                     "</div>"+
-                    "<a href='#'>"+obj.title+"</a>"+
+                    "<a href="+obj.url+">"+obj.title+"</a>"+
                     "<div class='bottom'>"+
                     "<div class='left'>"+
                     "<span>"+"<i class='fa fa-users'>"+"</i>"+obj.person+"</span>"+
